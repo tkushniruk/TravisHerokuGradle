@@ -6,7 +6,7 @@ jdk:
 script:
   - jdk_switcher use openjdk8
   - export JAVA_HOME=$HOME/openjdk8
-  - java -jar  web/build/libs/*.war
+  #- java -jar  web/build/libs/*.war
   #-jar admin/build/libs/admin-1.0-SNAPSHOT.jarbuild/server/webapp-runner-*.jar
 addons:
   apt:
