@@ -16,9 +16,7 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'maven-publish'
-
-
-    apply plugin: 'war'
+    
     repositories {
         mavenLocal()
         maven {
@@ -47,8 +45,7 @@ build.mustRunAfter clean
 
 task copyToLib(type: Copy) {
     into "$buildDir/libs"
-    from(configurations.compile)
-
+    from(configurations.compile)    
 }
 
 stage.dependsOn(copyToLib)
