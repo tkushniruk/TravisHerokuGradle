@@ -1,4 +1,6 @@
 language: java
+before_install:
+  - chmod +x gradlew
 jdk:
   - openjdk8
 script:
@@ -6,3 +8,4 @@ script:
   - export JAVA_HOME=$HOME/openjdk8
   - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --traget $JAVA_HOME
   - java $JAVA_OPTS -jar admin/build/libs/admin-1.0-SNAPSHOT.jar --port $PORT web/*.war
+
