@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.builders.services.BuilderServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T16:12:58" hostname="EPUAVINW0343" time="0.006">
+<testsuite name="com.builders.services.BuilderServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-22T15:13:36" hostname="EPUAVINW0343" time="0.013">
   <properties/>
-  <testcase name="testHello" classname="com.builders.services.BuilderServiceTest" time="0.006"/>
+  <testcase name="testHello" classname="com.builders.services.BuilderServiceTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

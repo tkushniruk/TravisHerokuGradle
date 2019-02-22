@@ -21,7 +21,7 @@
     </dependencies>
     <packaging>jar</packaging>
 
-    <name>admin</name>
+    <!--<name>admin</name>-->
     <url>http://maven.apache.org</url>
     <build>
         <plugins>
