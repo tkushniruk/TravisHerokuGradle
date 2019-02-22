@@ -6,7 +6,8 @@ jdk:
 script:
   - jdk_switcher use openjdk8
   - export JAVA_HOME=$HOME/openjdk8
-  - java $JAVA_OPTS -jar admin/build/libs/admin-1.0-SNAPSHOT.jar --port $PORT web/*.war
+  - java $JAVA_OPTS --port $PORT web/*.war
+  #-jar admin/build/libs/admin-1.0-SNAPSHOT.jar
 addons:
   apt:
     packages:
