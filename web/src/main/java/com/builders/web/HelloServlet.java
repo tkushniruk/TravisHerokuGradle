@@ -14,7 +14,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String hello = new BuilderService().sayHello();
+        /* String hello = new BuilderService().sayHello();
         InputStream stream = HelloServlet.class.getClassLoader().getResourceAsStream("web_config.properties");
         Properties properties = new Properties();
         try {
@@ -24,6 +24,7 @@ public class HelloServlet extends HttpServlet {
         }
         hello = hello + " " + properties.getProperty("hello");
         req.setAttribute("hello", hello);
-        req.getRequestDispatcher("hello.jsp").forward(req, resp);
+        req.getRequestDispatcher("hello.jsp").forward(req, resp) */;
+        resp.sendError(403,"HELLO WORLD");
     }
 }

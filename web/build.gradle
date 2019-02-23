@@ -7,15 +7,24 @@ plugins {
 }
 
 dependencies {
-    compile 'javax.servlet:servlet-api:2.5'
-    compile project(':services')
-    compile 'com.github.jsimone:webapp-runner:8.5.11.3'
+    
+    compile project(':services')    
+    compile('javax.servlet:javax.servlet-api:3.1.0')
+    compile 'com.github.jsimone:webapp-runner:7.0.22'
 }
 
 apply plugin: 'java'
-
+apply plugin: 'application'
 description = 'web'
-
+mainClassName = "com.builders.web.HelloServlet"
+jar {
+manifest {
+attributes "Main-Class" : "$mainClassName"
+}
+from {
+configurations.compile.collect {it.isDirectory() ? it : zipTree(it)}
+}
+}
 
 task stage() {
     dependsOn clean, war

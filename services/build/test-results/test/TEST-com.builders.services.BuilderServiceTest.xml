@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.builders.services.BuilderServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-22T21:19:50" hostname="DESKTOP-2ATK5SJ" time="0.006">
-  <properties/>
-  <testcase name="testHello" classname="com.builders.services.BuilderServiceTest" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
