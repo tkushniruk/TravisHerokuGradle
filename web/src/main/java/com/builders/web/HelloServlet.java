@@ -25,6 +25,6 @@ public class HelloServlet extends HttpServlet {
         hello = hello + " " + properties.getProperty("hello");
         req.setAttribute("hello", hello);
         req.getRequestDispatcher("hello.jsp").forward(req, resp) */;
-        resp.sendError(403,"HELLO WORLD");
+        resp.getWriter().print("WELCOME TO MATRIX");
     }
 }
