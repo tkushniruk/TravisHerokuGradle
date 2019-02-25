@@ -6,7 +6,6 @@ jdk:
 script:
   - jdk_switcher use openjdk8
   - export JAVA_HOME=$HOME/openjdk8
-
   - gradlew copyToLib
   - java -jar web/build/server/webapp-runner-*.jar --port 9000 web/build/libs/*.war
   #-jar admin/build/libs/admin-1.0-SNAPSHOT.jar
