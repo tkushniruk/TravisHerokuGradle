@@ -10,4 +10,8 @@ script:
 apt:
    packages:
      - oracle-java8-installer
+deploy:
+   provider: heroku
+     api_key:
+       secure: 8ed19f67-3834-4188-ad4c-142e60321123
 
